@@ -1,0 +1,31 @@
+@@ -10,17 +10,24 @@
+
+<body>
+    <div style="display: flex;">
+        <div
+        <div id="login-container"
+            style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <input id="login" placeholder="Login" onchange="validateLoginButton()">
+            <input id="senha" placeholder="Senha" type="password" onchange="validateLoginButton()">
+            <input id="api-key" placeholder="Api Key" onchange="validateLoginButton()">
+            <button id="login-button" disabled>Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Escreva...">
+        <div id="search-container" style="margin-left: 20px; display: none;">
+            <label for="search">Pesquise um filme</label>
+            <input id="search" placeholder="Escreva o nome do filme">
+            <button id="search-button">Pesquisar Filme</button>
+        </div>
+        <div id="list-container" style="margin:0px 24px; display: flex; flex-direction:column; display: none;">
+            <label for="listIdFilme">Adicione o filme na lista</label>
+            <input id="listIdFilme" placeholder="Digite o id de um filme">
+            <button id="addToList">Adicionar</button>
+            <ul id="listaFilmesUsuario"></ul>
+        </div>
+    </div>
+    <script src="../../dist/desafio_4/desafio4.js"></script>
+</body>
