@@ -1,1 +1,1 @@
-# ** Desafios do curso de TypeScript **
+# :collision: Desafios do curso de TypeScript :collision:
